@@ -15,10 +15,10 @@
     </properties>
 
     <modules>
-        <module>builders/admin</module>
-        <module>builders/services</module>
-        <module>builders/utils</module>
-        <module>builders/web</module>
+        <module>admin</module>
+        <module>services</module>
+        <module>utils</module>
+        <module>web</module>
     </modules>
 
     <dependencies>

@@ -1,0 +1,19 @@
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(':utils')
+    testImplementation 'junit:junit:4.13.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.2'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+task packageJar(type: Jar) {
+    destinationDirectory = layout.buildDirectory.dir("$rootDir/build/jars")
+    from "$rootDir"
+    include "services/**"
+}
